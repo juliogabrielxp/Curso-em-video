@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="nome">Nome<span>*</span></label>
+                <input type="text" id="nome" name="nome" required minlength="5" maxlength="25">
+            </p>
+            <p>
+                <label for="email">E-mail<span>*</span></label>
+                <input type="email" name="email" id="email" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="tel">Telefone<span>*</span></label>
+                <input type="tel" name="tel" id="tel" autocomplete="tel" required>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

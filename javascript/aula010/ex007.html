@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">
+        Resultado
+    </div>
+
+    <script>
+
+        function somar(){
+        let num1 = Number(document.querySelector('#num1').value)
+        let num2 = Number(document.querySelector('#num2').value)
+        let resultado = num1 +  num2
+
+        res.innerHTML = resultado
+        }
+    </script>
+</body>
+</html>

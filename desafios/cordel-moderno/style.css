@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('fontes/PassionOne-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fontes/Sriracha-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-um:'Passion One', cursive;
+    --font-dois:'Sriracha', cursive;
+}
+
+body, html {
+    min-height: 100vh;
+    background-color: grey;
+    font-family: var(--font-padrao);
+    font-size: 1em;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font-um);
+    font-size: 10vw;
+    padding-top: 10vh;
+    text-transform: uppercase;
+}
+
+header > p {
+
+    padding-bottom: 10vh;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: white;
+    font-family: var(--font-dois);
+    font-weight: 400;
+    padding-left: 30px;
+    font-size: 3.5vw;
+    line-height: 1.2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section#foto1 {
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
+
+}
+
+section#foto1 > p, section#foto2 > p {
+
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    padding: 5px;
+    text-shadow: 1px 1px black;
+    
+}
+
+section#foto2 {
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
+}
+
+p.especial  {
+    padding-top: 40px;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2vh;
+    font-family: var(--font-padrao);
+}

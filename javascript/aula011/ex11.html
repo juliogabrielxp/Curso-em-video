@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+<body>
+    <h1>Sistema de Cidadania</h1>
+  Onde você nasceu?<input type="text" name="pais" id="pais">
+  <input type="button" value="Enviar" onclick = "pesquisar()">
+  <div id="res">
+
+  </div>
+    <script>
+        function pesquisar(){
+            var txt = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            var nacionalidade = (txt.value)
+           res.innerHTML = `Você nasceu em ${nacionalidade}`
+           if (nacionalidade == 'Brasil'){
+            res.innerHTML += `<P>Você é <strong>BRASILEIRO</strong></p>`
+           } else {
+            res.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong></p>`
+           }
+           
+        }
+    </script>
+</body>
+</html>
