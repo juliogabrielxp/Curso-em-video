@@ -11,54 +11,61 @@ Grandes telas: acima de 1200px */
 @media screen and (min-width:768px) and (max-width:992px) {
 
     body {
-        background-image: linear-gradient(to top, #8C7C4A,#593831);
+        background-image: linear-gradient(to top,  #00C9A7,  #333C44);
     }
 
-    section#login {
+    #container {
+        height: 400px;
         width: 90vw;
+        display: flex;
+        align-items: center;
     }
 
-    section#login div#imagem {
-        float: left;
+    #container #imagem {
         width: 30%;
         height: 100%;
         background-position:center center;
         background-size: cover;
     }
 
-
-    section#login section#formulario {
-        float: right;
+    .campo {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (min-width:992px) {
 
     body {
-        background-image: linear-gradient(to top,#8C7C4A, #593831);
+        background-image: linear-gradient(to top, #00C9A7, #333C44);
     }
 
-    section#login {
+    #container {
         width: 950px;
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
-    section#login div#imagem {
-        float: right;
+    #container #imagem {
         width: 50%;
         height: 100%;
         background-position: center right;
     }
 
-    section#login div#formulario {
-        float: left;
+    #container #formulario {
         width: 50%;
     }
 
-    div#formulario h1 {
+    #formulario h1 {
         font-size: 2em;
     }
 
-    div#formulario p {
+    #formulario p {
         font-size: 1.2em;
+    }
+
+    button {
+        color: white;
     }
 }
