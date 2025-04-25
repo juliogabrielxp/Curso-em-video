@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        .container {
+           background-color: rgb(0, 255, 85); 
+           border: 2px solid black;
+            flex-flow: row nowrap;
+           display: flex;
+           width: 650px;
+           
+        }
+
+        .item {
+            background-color: blue;
+            border: 1px solid red;
+            color: white;
+            text-align: center;
+            
+            
+        }
+
+        #i1 {
+            flex-basis: 200px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        #i2 {
+            flex-basis: 200px;
+            flex-shrink: 0;
+            flex-grow: 0;
+    
+        }
+
+        #i3 {
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">
+            a
+        </div>
+        <div class="item" id="i2">
+            b
+        </div>
+        <div class="item" id="i3">
+            c
+        </div>
+    </div>
+</body>
+</html>
